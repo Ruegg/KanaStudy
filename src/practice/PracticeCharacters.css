@@ -1,0 +1,144 @@
+.preview-set {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-character {
+  font-size: 1.2em;
+  background-color: #57BFFC;
+  color: white;
+  margin: 2px 0.2em;
+}
+
+.selected-sets {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.notice-practice {
+  text-align: center;
+}
+
+.selected-amount {
+  color: #57BFFC;
+  font-weight: bold;
+}
+
+.practice-btn,.again-btn {
+  font-family: inherit;
+  font-size: 1.2em;
+  background-color: #57BFFC;
+  color: white;
+  padding: 0.8em 1.2em;
+  border: none;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  display: block;
+  margin: 4em auto;
+  user-select: none;
+}
+
+.practice-btn:hover,.again-btn:hover {
+  background-color: #05A0FA;
+}
+
+.type-question {
+  font-family: 'Kosugi Maru';
+  font-size: 6em;
+  margin: 1em auto;
+  text-align: center;
+  transition: color 0.25s;
+}
+
+.type-answer {
+  font-size: 2em;
+  width: 6em;
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  background-color: #57BFFC;
+  padding: 0.2em;
+  color: white;
+  display: block;
+  margin: auto;
+}
+
+.bad-type {
+  color: red;
+}
+
+.select-question {
+  font-size: 6em;
+  margin: 1em auto;
+  text-align: center;
+  user-select: none;
+}
+
+.select-choices {
+  display: flex;
+  justify-content: center;
+}
+
+.select-choice {
+  font-family: 'Kosugi Maru';
+  font-size: 4em;
+  padding: 0.2em;
+  background-color: #57BFFC;
+  color: white;
+  margin: 0.2em;
+  border-radius: 8px;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-choice:hover {
+  background-color: #05A0FA;
+}
+
+
+.bad-choice {
+  transition: background-color 1s;
+  background-color: red;
+}
+
+.bad-choice:hover {
+  background-color: red;
+}
+
+.finished-msg {
+  font-family: inherit;
+  font-size: 2.4em;
+  text-align: center;
+  margin-top: 2em;
+  color: #57BFFC;
+}
+
+.stats {
+  font-family: inherit;
+  font-size: 1.2em;
+  color: gray;
+  text-align: center;
+}
+
+.total-time,.average-time {
+  color: #57BFFC;
+  font-weight: bold;
+}
+
+.problem-counter {
+  background-color: #57BFFC;
+  width: max-content;
+  padding: 0.5em;
+  margin: 1em;
+  font-family: inherit;
+  color: white;
+}
+
+.guide-text {
+  display: block;
+  margin: 2em;
+  text-align: center;
+  color: gray;
+}

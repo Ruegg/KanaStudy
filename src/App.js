@@ -1,25 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import {BrowserRouter as Router, Switch, Route, Link, withRouter} from "react-router-dom";
+
+import { createBrowserHistory } from 'history';
+
+import Selections from './selection/Selections';
+import PracticeCharacters from './practice/PracticeCharacters';
+import PracticeReading from './practice/PracticeReading';
+
 import './App.css';
+
+import history from './history';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <nav className="navigation">
+        <ul>
+          <li><a className="logo">Kana.Study</a></li>
+          <li className="navigation-item"><Link to="/">Selections</Link></li>
+          <li className="navigation-item"><Link to="/practice-characters">Practice Characters</Link></li>
+          <li className="navigation-item"><Link to="/practice-reading">Practice Reading</Link></li>
+        </ul>
+      </nav>
+      <Switch>
+        <Route path="/practice-characters">
+          <PracticeCharacters/>
+        </Route>
+        <Route path="/practice-reading">
+          <PracticeReading/>
+        </Route>
+        <Route path="/">
+          <Selections/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

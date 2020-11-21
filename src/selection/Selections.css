@@ -1,0 +1,174 @@
+.character-sets {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.set {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  padding: 1em;
+  text-align: center;
+  margin: 4px 2px;
+  color: #57BFFC;
+  outline: 1px #57BFFC solid;
+  user-select: none;
+}
+
+.toggled-box {
+  background-color: #57BFFC;
+  color: white;
+}
+
+.japanese-character {
+  font-size: 2.6em;
+  font-family: 'Kosugi Maru';
+}
+
+.translation {
+  font-size: 1.2em;
+}
+
+.language-selection {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+}
+
+.language-btn {
+  font-family: inherit;
+  font-size: 1.2em;
+  background-color: #57BFFC;
+  color: white;
+  padding: 0.8em 1.2em;
+  border: none;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.language-btn:hover {
+  background-color: #05A0FA;
+}
+
+.language-selected {
+  background-color: #258dca;
+}
+
+.language-selected:focus {
+  background-color: #258dca;
+}
+
+
+/*Checkbox*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+  margin-top: 8px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.select-container {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 48px;
+  margin-right: 48px;
+}
+
+.select-checkmark {
+  left: auto;
+  margin: 8px;
+}
+
+.select-msg {
+  display: block;
+  text-align: center;
+  margin: 1em auto;
+  color: #575757;
+}
+
+@media only screen and (max-width: 875px) {
+  .character-box {
+    padding: 4px 1px;
+    margin: 2px;
+  }
+
+  .japanese-character {
+    font-size: 1em;
+  }
+
+  .translation {
+    font-size: 0.8em;
+  }
+}
+
+.practice-href {
+  color: #57BFFC;
+  cursor: pointer;
+}

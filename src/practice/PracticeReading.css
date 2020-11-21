@@ -1,0 +1,114 @@
+.reading-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.reading-guides {
+  display: flex;
+  align-items: center;
+}
+
+.reading-timer {
+  font-size: 1.2em;
+  border: 2px solid #57BFFC;
+  color: #57BFFC;
+  padding: 8px 16px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.reading-restartbtn {
+  font-size: 1.2em;
+  width: 32px;
+  height: 32px;
+  background-color: #57BFFC;
+  color: white;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.reading-restartbtn:hover {
+  background-color: #05A0FA;
+}
+
+.reading-selection {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.focused-word {
+  background-color: #f1f1f1;
+}
+
+.word-box {
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #57BFFC;
+  margin: 6px;
+  user-select: none;
+  padding: 1em;
+}
+
+.moving-box {
+
+}
+.word {
+  padding: 4px;
+  font-size: 2.2em;
+  white-space: nowrap;
+}
+
+.correct {
+  color: #2196F3;
+}
+.wrong {
+  color: red;
+}
+
+.filled-character {
+  color: #2196F3;
+}
+
+.input-area {
+
+}
+
+.reading-input {
+  width: 80%;
+  max-width: 400px;
+  font-size: 1.2em;
+  font-family: inherit;
+  display: block;
+  margin: auto;
+  padding: 0.4em;
+}
+
+.word-preview {
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.practice-preview {
+  padding: 1em;
+  border: 1px solid gray;
+}
+
+.results-bar {
+  padding-top: 2em;
+}
+
+.result {
+  padding: 1em;
+  display: inline-block;
+}
+.result-label{
+  font-weight: bold;
+}
+
+.again-btn {
+  margin: 2em auto;
+}
